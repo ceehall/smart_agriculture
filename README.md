@@ -140,15 +140,14 @@ The technical model should be abstracted behind a simple interface — a mobile 
 
 ## 🙋 Authors
 
-**Your Name**
-[GitHub]
+**GitHub Profiles**
 (https://github.com/gideoncobbina)
 (https://github.com/sandra620)
 (https://github.com/Wesoamo-78)
 (https://github.com/abissath)
 (https://github.com/ceehall)
 
-[LinkedIn]
+**LinkedIn Profiles**
 (https://linkedin.com/in/gideon-cobbina)
 (https://linkedin.com/in/sandraosei)
 (https://linkedin.com/in/joycelyntigawoti)
