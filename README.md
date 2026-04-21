@@ -115,6 +115,28 @@ Key findings from the analysis include:
 - The target variable required cleaning prior to modelling, as a value of `2` was incorrectly encoded and needed to be remapped to `0` to maintain binary classification integrity.
 - Class distribution was inspected and found to be reasonably balanced, reducing the risk of model bias toward the majority class.
 
+## Recommendation
+
+Based on the findings of this project, the following recommendations are made:
+
+**1. Deploy Gradient Boosting as the core prediction engine.**
+The tuned Gradient Boosting model achieved the best performance and should be the model of choice for any production or pilot deployment. It is robust, handles complex feature interactions well, and generalises effectively to unseen data.
+
+**2. Integrate the model into IoT-enabled irrigation systems.**
+The model takes readily available sensor inputs — moisture, temperature, humidity — making it highly compatible with existing smart farming infrastructure. Embedding the model into an IoT pipeline would enable real-time, automated irrigation decisions without human intervention.
+
+**3. Validate on local and regional farm data before full deployment.**
+The current model was trained on a single dataset. Before scaling, it should be retested and potentially retrained on data collected from the specific farms or regions where it will be used, as soil types and climate conditions vary significantly by geography.
+
+**4. Expand the feature set in future iterations.**
+Incorporating additional variables such as rainfall forecasts, crop age, fertiliser application history, and historical yield data could further improve prediction accuracy and provide richer decision support.
+
+**5. Monitor and retrain the model periodically.**
+Environmental patterns shift with seasons and climate change. A model retraining schedule — quarterly or seasonally — should be established to ensure the system remains accurate over time.
+
+**6. Build a simple farmer-facing dashboard.**
+The technical model should be abstracted behind a simple interface — a mobile app or SMS alert system — that communicates recommendations in plain language (e.g., *"Irrigate your maize crop today"*), making the tool accessible to farmers regardless of technical literacy.
+
 
 ## 🙋 Author
 
