@@ -138,10 +138,21 @@ Environmental patterns shift with seasons and climate change. A model retraining
 The technical model should be abstracted behind a simple interface — a mobile app or SMS alert system — that communicates recommendations in plain language (e.g., *"Irrigate your maize crop today"*), making the tool accessible to farmers regardless of technical literacy.
 
 
-## 🙋 Author
+## 🙋 Authors
 
-**Your Name**
-[GitHub](https://github.com/your-username) · [LinkedIn](https://linkedin.com/in/your-profile)
+**GitHub Profiles**
+(https://github.com/gideoncobbina)
+(https://github.com/sandra620)
+(https://github.com/Wesoamo-78)
+(https://github.com/abissath)
+(https://github.com/ceehall)
+
+**LinkedIn Profiles**
+(https://linkedin.com/in/gideon-cobbina)
+(https://linkedin.com/in/sandraosei)
+(https://linkedin.com/in/joycelyntigawoti)
+(https://linkedin.com/in/michael-abissath)
+(https://linkedin.com/in/cameron-harley)
 
 ## 📄 License
 
