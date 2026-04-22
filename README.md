@@ -102,6 +102,19 @@ jupyter notebook Smart_Agriculture_Classification.ipynb
 - **Smart farming dashboards** — alert farmers when irrigation thresholds are met
 
 ---
+## Conclusion
+
+Six classification models were trained and evaluated: Logistic Regression, Decision Tree, K-Nearest Neighbors, Random Forest, Support Vector Machine, and Gradient Boosting. All models underwent hyperparameter tuning using Randomized Search with 5-fold cross-validation to identify optimal configurations.
+
+After evaluation using accuracy scores, confusion matrices, and ROC-AUC scores, the **Gradient Boosting Classifier** consistently outperformed the other models across all metrics. It demonstrated the highest AUC score and the best balance between precision and recall — meaning it correctly identified crops that needed irrigation while minimising false alarms. The model was subsequently packaged into a scikit-learn Pipeline alongside One-Hot Encoding to ensure clean, reproducible predictions on new data.
+
+Key findings from the analysis include:
+
+- Environmental features — particularly moisture index (MOI), temperature, and humidity — were the strongest predictors of irrigation need.
+- Soil type and seedling stage added meaningful signal, confirming that a one-size-fits-all irrigation schedule is insufficient across different crop conditions.
+- The target variable required cleaning prior to modelling, as a value of `2` was incorrectly encoded and needed to be remapped to `0` to maintain binary classification integrity.
+- Class distribution was inspected and found to be reasonably balanced, reducing the risk of model bias toward the majority class.
+
 
 ## 🙋 Author
 
@@ -111,3 +124,4 @@ jupyter notebook Smart_Agriculture_Classification.ipynb
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
+
